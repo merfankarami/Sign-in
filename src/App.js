@@ -1,23 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import InputText from "./Components/InputText";
+import CheckBox from "./Components/CheckBox";
+import Button from "./Components/Button";
+import Link from "./Components/Links";
+
+import imgs from "./Pictures/images.png";
+
+import "./App.css";
+import "./Components/Links.css";
+import "./Components/Image.css";
+
+const style = {
+  color: "rgba(0, 0, 0, 0.54)",
+  marginTop: "60px"
+};
+
+const style1 = {
+  fontSize: "30px"
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <img className="img" src={imgs} alt="imgs" />
+      <p style={style1}>Sign in</p>
+      <div>
+        <InputText placeholder="Email Address *" />
+      </div>
+      <div>
+        <InputText placeholder="Password *" />
+      </div>
+      <div>
+        <CheckBox />
+      </div>
+      <div>
+        <Button />
+      </div>
+      <div className="div">
+        <Link className="one" href="#">
+          Forgot password?
+        </Link>
+        <Link href="#" className="two">
+          Don't have an account? Sign Up
+        </Link>
+      </div>
+      <div className="div2">
+        <p style={style}>
+          Copyright © <Link href="#" className="three">Your Website</Link> 2021.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }

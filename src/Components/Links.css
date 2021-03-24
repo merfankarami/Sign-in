@@ -1,0 +1,27 @@
+.div {
+    margin-top: 4mm;
+}
+
+.div2 {
+    color: rgba(0, 0, 0, 0.54)
+}
+
+a.one {
+    position: relative;
+    margin-left: 0mm;
+}
+a.one:link {color:#1976d2;text-decoration:none;}
+a.one:visited {color:#1976d2;text-decoration:none;}
+a.one:hover {text-decoration:underline;}
+
+a.two {
+    position: relative;
+    margin-left: 17mm;
+}
+a.two:link {color:#1976d2;text-decoration:none;}
+a.two:visited {color:#1976d2;text-decoration:none;}
+a.two:hover {text-decoration:underline;}
+
+a.three:link {color: rgba(0, 0, 0, 0.54);text-decoration:none;}
+a.three:visited {color:rgba(0, 0, 0, 0.54);text-decoration:none;}
+a.three:hover {text-decoration:underline;}
